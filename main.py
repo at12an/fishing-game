@@ -53,14 +53,6 @@ def draw_water():
     screen.fill(ocean_blue, ocean_rect)
     
     
-# Load Spritesheet
-spritesheet = Spritesheet('images/spritesheet.png')
-sprites = []
-for i in range(1,14):
-    sprites.append(pygame.transform.scale(spritesheet.parse_sprite('casting_' + str(i) + '.png'), (500, 500)))
-sprite_count = 0
-    
-    
 # Initialise fishermanstate
 player = Fisher(SCREEN_WIDTH/2, SCREEN_HEIGHT/3)
 hook = Hook(0,0,0,player)
