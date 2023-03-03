@@ -61,7 +61,7 @@ for i in range(1,14):
 sprite_count = 0
     
     
-# Initialise fisherman
+# Initialise fishermanstate
 player = Fisher(SCREEN_WIDTH/2, SCREEN_HEIGHT/3)
 hook = Hook(0,0,0,player)
 print(SCREEN_WIDTH)
@@ -137,15 +137,15 @@ while run:
                     
     keys = pygame.key.get_pressed()    
     # Run sprite animation
-    if (keys[pygame.K_x]):
-        if (player.direction == RIGHT):
-            screen.blit(pygame.transform.flip(sprites[sprite_count % 8],True,False), (player.rect.x, player.rect.centery-125))
-        else:  
-            screen.blit(sprites[sprite_count % 8], (player.rect.x, player.rect.centery-125))
-        if (sprite_count != 7):
-            sprite_count += 1
-    else:
-        player.draw(screen)
+    # if (keys[pygame.K_x]):
+    #     if (player.direction == RIGHT):
+    #         screen.blit(pygame.transform.flip(sprites[sprite_count % 8],True,False), (player.rect.x, player.rect.centery-125))
+    #     else:  
+    #         screen.blit(sprites[sprite_count % 8], (player.rect.x, player.rect.centery-125))
+    #     if (sprite_count != 7):
+    #         sprite_count += 1
+    # else:
+    player.draw(screen)
            
            
                     
