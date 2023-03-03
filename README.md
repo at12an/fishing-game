@@ -1,5 +1,5 @@
 # fishing-game
-Simple fishing game made using pygame library.
+Simple fishing game made using pythons pygame library.
 
 How to download: 
 1. Git clone / download zip and unzip
